@@ -3,7 +3,7 @@ angular.module('memberApp', [])
         function ($scope, $http) {
             var memberList = this;
 
-            $http.get('http://member.family.empowerhack.io/members').success(function (data) {
+            $http.get('http://member.empowerhack.io/members').success(function (data) {
                 memberList.members = data._embedded.members;
             });
     }]);
